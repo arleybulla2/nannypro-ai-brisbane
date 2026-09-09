@@ -93,13 +93,21 @@ export default function FreeTrialModal({ isOpen, onClose, lang }) {
                 />
               </div>
 
-              <div className="pt-2">
+              <div className="pt-2 flex flex-col gap-2.5">
                 <button
                   type="submit"
                   className="w-full py-4 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 text-slate-950 font-extrabold text-sm shadow-lg shadow-emerald-500/25 hover:scale-[1.02] transition-all flex items-center justify-center space-x-2"
                 >
                   <span>{lang === 'es' ? 'ACTIVAR MI PRUEBA GRATIS DE 7 DÍAS 🚀' : 'ACTIVATE MY 7-DAY FREE TRIAL 🚀'}</span>
                 </button>
+                <a
+                  href="https://wa.me/61425342469?text=Hola!%20Prefiero%20chatear%20directamente%20por%20WhatsApp%20para%20cuidado%20infantil%20en%20Brisbane"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full py-3 rounded-xl bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 font-bold text-xs text-center transition-all flex items-center justify-center space-x-2"
+                >
+                  <span>💬 Chatear por WhatsApp directo (+61 425 342 469)</span>
+                </a>
               </div>
             </form>
 

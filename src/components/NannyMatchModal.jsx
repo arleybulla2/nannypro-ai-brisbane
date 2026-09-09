@@ -194,7 +194,7 @@ export default function NannyMatchModal({ isOpen, onClose, lang }) {
 
             <div className="space-y-2">
               <a
-                href="https://wa.me/?text=Hola!%20Me%20interesa%20agendar%20una%20reuni%C3%B3n%20para%20cuidado%20infantil%20en%20Brisbane%20con%20NannyPro%20AI"
+                href="https://wa.me/61425342469?text=Hola!%20Me%20interesa%20agendar%20una%20entrevista%20gratuita%20para%20cuidado%20infantil%20en%20Brisbane%20con%20NannyPro%20AI"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full py-3.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 text-slate-950 font-bold text-sm shadow-lg shadow-emerald-500/20 flex items-center justify-center space-x-2 hover:scale-[1.02] transition-all"
