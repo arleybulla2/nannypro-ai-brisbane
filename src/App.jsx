@@ -12,12 +12,14 @@ import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import NannyMatchModal from './components/NannyMatchModal';
 import FreeTrialModal from './components/FreeTrialModal';
-import { ShieldCheck, UserCheck, MessageCircle } from 'lucide-react';
+import AdminCRM from './components/AdminCRM';
+import { ShieldCheck, UserCheck, LayoutDashboard } from 'lucide-react';
 
 export default function App() {
   const [lang, setLang] = useState('es'); // 'es' or 'en'
   const [isMatchModalOpen, setIsMatchModalOpen] = useState(false);
   const [isTrialModalOpen, setIsTrialModalOpen] = useState(false);
+  const [isAdminOpen, setIsAdminOpen] = useState(false);
 
   return (
     <div className="min-h-screen bg-[#090D16] text-slate-100 font-sans selection:bg-emerald-500/30 selection:text-emerald-300 relative">
@@ -90,8 +92,19 @@ export default function App() {
         setLang={setLang}
       />
 
-      {/* Floating Action Button (FAB) for Instant Match in Brisbane */}
-      <div className="fixed bottom-6 right-6 z-40">
+      {/* Floating Action Buttons: Admin Operations & Client Match */}
+      <div className="fixed bottom-6 right-6 z-40 flex items-center space-x-3">
+        {/* Admin CRM Button */}
+        <button
+          onClick={() => setIsAdminOpen(true)}
+          className="p-3.5 rounded-full bg-slate-900 border border-slate-700 text-slate-300 hover:text-emerald-400 hover:border-emerald-500/50 shadow-xl transition-all hover:scale-105 flex items-center space-x-2"
+          title="Panel de Operaciones NannyPro AI"
+        >
+          <LayoutDashboard className="w-5 h-5" />
+          <span className="hidden lg:inline text-xs font-bold">Admin Hub</span>
+        </button>
+
+        {/* Client Match FAB */}
         <button
           onClick={() => setIsMatchModalOpen(true)}
           className="group relative p-4 rounded-full bg-gradient-to-r from-emerald-500 to-teal-500 text-slate-950 font-bold shadow-[0_0_30px_rgba(16,185,129,0.5)] hover:scale-110 transition-all duration-300 flex items-center space-x-2"
@@ -116,6 +129,12 @@ export default function App() {
         isOpen={isTrialModalOpen}
         onClose={() => setIsTrialModalOpen(false)}
         lang={lang}
+      />
+
+      {/* Admin CRM & Business Control Panel */}
+      <AdminCRM
+        isOpen={isAdminOpen}
+        onClose={() => setIsAdminOpen(false)}
       />
 
     </div>
