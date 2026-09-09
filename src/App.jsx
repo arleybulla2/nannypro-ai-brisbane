@@ -1,19 +1,19 @@
 import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import CredentialsShowcase from './components/CredentialsShowcase';
 import Services from './components/Services';
-import HowItWorks from './components/HowItWorks';
+import RateCalculator from './components/RateCalculator';
 import AIOrchestration from './components/AIOrchestration';
 import DailyFundamentals from './components/DailyFundamentals';
 import DifferenceTable from './components/DifferenceTable';
 import Testimonials from './components/Testimonials';
-import Pricing from './components/Pricing';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import NannyMatchModal from './components/NannyMatchModal';
 import FreeTrialModal from './components/FreeTrialModal';
 import AdminCRM from './components/AdminCRM';
-import { ShieldCheck, UserCheck, LayoutDashboard } from 'lucide-react';
+import { UserCheck, LayoutDashboard, Calculator } from 'lucide-react';
 
 export default function App() {
   const [lang, setLang] = useState('es'); // 'es' or 'en'
@@ -41,43 +41,41 @@ export default function App() {
           onOpenTrialModal={() => setIsTrialModalOpen(true)}
         />
 
-        {/* 2. Elite Care Services */}
+        {/* 2. Official Queensland Credentials Showcase */}
+        <CredentialsShowcase
+          lang={lang}
+        />
+
+        {/* 3. Elite Care Services */}
         <Services
           lang={lang}
           onOpenMatchModal={() => setIsMatchModalOpen(true)}
         />
 
-        {/* 3. How It Works Timeline */}
-        <HowItWorks
+        {/* 4. Interactive AUD Rate Calculator */}
+        <RateCalculator
           lang={lang}
-          onOpenMatchModal={() => setIsMatchModalOpen(true)}
         />
 
-        {/* 4. Interactive Feature Component: AI Family Orchestration */}
+        {/* 5. Interactive Feature Component: AI Family Orchestration */}
         <AIOrchestration
           lang={lang}
         />
 
-        {/* 5. Daily Fundamentals Grid (12 Interactive Cards) */}
+        {/* 6. Daily Fundamentals Grid (12 Interactive Cards) */}
         <DailyFundamentals
           lang={lang}
         />
 
-        {/* 6. Comparison Table / Difference Section */}
+        {/* 7. Comparison Table / Difference Section */}
         <DifferenceTable
           lang={lang}
           onOpenMatchModal={() => setIsMatchModalOpen(true)}
         />
 
-        {/* 7. Real Testimonials (Brisbane Latino & AU Families) */}
+        {/* 8. Real Testimonials (Brisbane Latino & AU Families) */}
         <Testimonials
           lang={lang}
-        />
-
-        {/* 8. Pricing & Memberships ($ AUD) */}
-        <Pricing
-          lang={lang}
-          onOpenTrialModal={() => setIsTrialModalOpen(true)}
         />
 
         {/* 9. FAQ Section (Accordion Style) */}
@@ -112,7 +110,7 @@ export default function App() {
         >
           <UserCheck className="w-6 h-6" />
           <span className="hidden md:inline text-xs font-black uppercase tracking-wider pr-1">
-            {lang === 'es' ? 'Buscar Niñera Brisbane' : 'Find Brisbane Nanny'}
+            {lang === 'es' ? 'Reservar Cuidado Privado' : 'Book Private Care'}
           </span>
           <span className="absolute -top-1 -right-1 w-3.5 h-3.5 bg-indigo-500 rounded-full border-2 border-slate-950 animate-ping" />
         </button>

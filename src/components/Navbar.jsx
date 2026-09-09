@@ -36,16 +36,15 @@ export default function Navbar({ lang, setLang, onOpenMatchModal, onOpenTrialMod
           </div>
 
           {/* Desktop Navigation Links */}
-          <div className="hidden lg:flex items-center space-x-7">
+          <div className="hidden lg:flex items-center space-x-6">
             <a href="#services" className="text-sm font-medium text-slate-300 hover:text-emerald-400 transition-colors">{t.links.services}</a>
-            <a href="#how-it-works" className="text-sm font-medium text-slate-300 hover:text-emerald-400 transition-colors">{t.links.howItWorks}</a>
-            <a href="#orchestration" className="text-sm font-medium text-slate-300 hover:text-emerald-400 transition-colors flex items-center gap-1">
-              <Sparkles className="w-3.5 h-3.5 text-indigo-400" />
-              {t.links.orchestration}
+            <a href="#credentials" className="text-sm font-medium text-slate-300 hover:text-emerald-400 transition-colors">{t.links.credentials}</a>
+            <a href="#calculator" className="text-sm font-medium text-slate-300 hover:text-emerald-400 transition-colors flex items-center gap-1">
+              <Sparkles className="w-3.5 h-3.5 text-emerald-400" />
+              {t.links.calculator}
             </a>
-            <a href="#fundamentals" className="text-sm font-medium text-slate-300 hover:text-emerald-400 transition-colors">{t.links.fundamentals}</a>
-            <a href="#difference" className="text-sm font-medium text-slate-300 hover:text-emerald-400 transition-colors">{t.links.difference}</a>
-            <a href="#pricing" className="text-sm font-medium text-slate-300 hover:text-emerald-400 transition-colors">{t.links.pricing}</a>
+            <a href="#orchestration" className="text-sm font-medium text-slate-300 hover:text-emerald-400 transition-colors">{t.links.orchestration}</a>
+            <a href="#testimonials" className="text-sm font-medium text-slate-300 hover:text-emerald-400 transition-colors">{t.links.testimonials}</a>
             <a href="#faq" className="text-sm font-medium text-slate-300 hover:text-emerald-400 transition-colors">{t.links.faq}</a>
           </div>
 

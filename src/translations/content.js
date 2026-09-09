@@ -1,184 +1,140 @@
 export const content = {
   es: {
     navbar: {
-      badge: "Brisbane, QLD 🇦🇺",
-      aiTag: "IA",
+      badge: "Disponible en Brisbane, QLD 🇦🇺",
+      aiTag: "PRO 2.0",
       links: {
-        services: "Servicios",
-        howItWorks: "Cómo Funciona",
+        services: "Servicio Privado",
+        credentials: "Acreditaciones QLD",
+        calculator: "Calculadora AUD",
         orchestration: "Orquestación IA",
-        fundamentals: "Fundamentales",
-        difference: "La Diferencia",
-        pricing: "Planes",
+        testimonials: "Historias Reales",
         faq: "Preguntas Frecuentes"
       },
-      login: "Iniciar Sesión",
-      trialCta: "Prueba Gratis 7 Días",
-      matchCta: "Buscar Niñera Ahora"
+      login: "Acceso Padres",
+      trialCta: "Agendar Entrevista Gratis",
+      matchCta: "Reservar Cuidado Privado"
     },
     hero: {
-      badge: "Smart Childcare Orchestrated by AI in Brisbane 🇦🇺",
-      badgeLatino: "La Red #1 de Niñeras Bilingües y Verificadas en Brisbane",
-      titleStart: "Tu familia no es promedio.",
-      titleAccent: "Tu tecnología de cuidado",
-      titleEnd: "tampoco debería serlo.",
-      subtitle: "Elimina el estrés del cuidado infantil. NannyPro AI combina verificación QLD Blue Card, rastreo de actividades en tiempo real, planes de aprendizaje EYLF y estimulación bilingüe (Español/Inglés) en un solo cerebro digital.",
-      findNannyBtn: "ENCONTRAR NIÑERA EN BRISBANE",
-      viewPlansBtn: "Ver Planes de Membresía",
-      socialProof: "Más de 450+ Familias activas en New Farm, Paddington, West End, Ascot, South Brisbane & Indooroopilly",
-      rating: "4.9/5 Calificación de Padres",
+      badge: "Servicio Privado de Cuidado Infantil Bilingüe en Brisbane 🇦🇺",
+      badgeLatino: "Atención Exclusiva 1:1 por Educadora Fundadora Certificada",
+      titleStart: "El cuidado privado que tu hijo merece.",
+      titleAccent: "La tranquilidad absoluta",
+      titleEnd: "que tu familia necesita en Brisbane.",
+      subtitle: "Un servicio boutique de alta gama que combina la calidez bilingüe (Español/Inglés), la máxima acreditación gubernamental de Queensland (QLD Blue Card & Primeros Auxilios) y el marco educativo australiano EYLF.",
+      findNannyBtn: "SOLICITAR VALORACIÓN EN BRISBANE",
+      viewPlansBtn: "Calcular Tarifas en $ AUD",
+      socialProof: "Atención VIP dedicada en New Farm, Paddington, West End, Ascot, South Brisbane & Indooroopilly",
+      rating: "5.0/5 ★ Calificación de Familias Fundadoras",
       mockup: {
-        liveBadge: "EN VIVO • BRISBANE NORTH",
-        verifiedCard: "Verificada con Blue Card QLD",
-        wwccNumber: "WWCC QLD #849201 • Vigente",
-        nannyName: "Valentina M.",
-        nannyRole: "Niñera Bilingüe Elite (Español & English)",
-        nannySuburbs: "Brisbane Inner City • 5+ años exp.",
-        readinessScore: "98/100",
-        readinessLabel: "Pediatric Health & Safety Score",
-        activityTitle: "Feed de Actividades en Tiempo Real",
-        activity1: "11:30 AM • Parque New Farm: Lectura EYLF y juego sensorial al aire libre (35 mins sol).",
-        activity2: "12:15 PM • Almuerzo nutritivo alto en proteínas sin alérgenos completado 🥗",
-        activity3: "01:00 PM • Rutina de siesta iniciada (Ruido blanco + monitoreo de temperatura)."
+        liveBadge: "CUIDADO BOUTIQUE VIP • BRISBANE",
+        verifiedCard: "QLD Blue Card & CPR Acreditado",
+        wwccNumber: "Blue Card QLD #849201 • Vigente",
+        nannyName: "Educadora Fundadora Bilingüe",
+        nannyRole: "Especialista en Desarrollo Temprano EYLF",
+        nannySuburbs: "Brisbane Metropolitan • Atención 1:1",
+        readinessScore: "100/100",
+        readinessLabel: "Puntaje de Seguridad & Salud Pediátrica",
+        activityTitle: "Reporte Diario & Seguimiento Pedagógico",
+        activity1: "10:30 AM • Parque New Farm: Lectura EYLF y juego sensorial al aire libre (sol & aire limpio).",
+        activity2: "12:30 PM • Almuerzo nutritivo libre de alérgenos completado 🥗",
+        activity3: "01:30 PM • Rutina de descanso & música suave en español/inglés."
       }
     },
+    credentials: {
+      tag: "100% TRANSPARENCIA & CUMPLIMIENTO",
+      title: "Máximas Acreditaciones Oficiales en Queensland",
+      subtitle: "Para tu tranquilidad absoluta, todas las certificaciones están vigentes y verificables ante el Gobierno de Queensland.",
+      cards: [
+        {
+          title: "QLD Blue Card Services",
+          number: "Blue Card #849201",
+          desc: "Habilitación legal oficial del Gobierno de Queensland para el trabajo y cuidado de niños sin antecedentes.",
+          status: "Verificado & Activo 🟢"
+        },
+        {
+          title: "Primeros Auxilios Pediátricos & CPR",
+          number: "HLTAID012 Certified",
+          desc: "Certificación médica australiana en atención de emergencias pediátricas, reanimación y manejo de alergias.",
+          status: "Vigente Australia 🟢"
+        },
+        {
+          title: "Marco Educativo EYLF",
+          number: "Early Years Learning Framework",
+          desc: "Alineación directa con el currículo oficial australiano para el desarrollo cognitivo y socioemocional temprano.",
+          status: "Implementado 🟢"
+        },
+        {
+          title: "Antecedentes Policiales Nacionales",
+          number: "National Police Check AU",
+          desc: "Revisión rigurosa de antecedentes penales en todo el territorio australiano aprobada sin ninguna restricción.",
+          status: "Aprobado 🟢"
+        }
+      ]
+    },
+    calculator: {
+      tag: "SISTEMA DE ESTIMACIÓN TRANSPARENTE",
+      title: "Calculadora Interactiva de Tarifas en $ AUD",
+      subtitle: "Diseña el plan de cuidado bilingüe perfecto para tu familia en Brisbane y recibe una cotización instantánea.",
+      suburbLabel: "Selecciona tu Suburbio en Brisbane:",
+      daysLabel: "Días por semana requeridos:",
+      hoursLabel: "Horas de cuidado por día:",
+      suburbOptions: ["New Farm / Teneriffe", "Paddington / Milton", "West End / South Brisbane", "Ascot / Hamilton", "Indooroopilly / Toowong", "Otro Suburbio de Brisbane"],
+      estimatedTitle: "Inversión Estimada por Semana",
+      estimatedNote: "Incluye atención personalizada 1:1, planes EYLF, reporte diario y seguridad total.",
+      ctaBtn: "💬 RESERVAR ESTE HORARIO POR WHATSAPP (+61 425 342 469)"
+    },
     services: {
-      tag: "SERVICIOS DE CUIDADO ELITE",
-      title: "Diseñado para la tranquilidad total de las familias en Brisbane",
-      subtitle: "Combinamos la calidez y cultura de niñeras bilingües calificadas con el rigor de la verificación gubernamental de Queensland y la Inteligencia Artificial.",
+      tag: "SERVICIOS PRIVADOS BOUTIQUE",
+      title: "Diseñado para la excelencia en el cuidado de tus hijos",
+      subtitle: "Una propuesta integral que une el aprendizaje bilingüe temprano con la más alta exigencia de seguridad en Brisbane.",
       cards: [
         {
           id: "01",
-          title: "Emparejamiento Inteligente Bilingüe",
-          desc: "100% Niñeras verificadas con QLD Blue Card, antecedentes policiales y entrevista psicológica. Aceptamos solo el 1% superior de postulantes bilingües (Español/Inglés).",
-          features: ["Filtro de Suburbio en Brisbane", "Compatibilidad Cultural & Valores", "Verificación Instantánea Blue Card"]
+          title: "Estimulación Bilingüe Temprana",
+          desc: "Inmersión natural en español e inglés a través de canciones, cuentos tradicionales y juegos cognitivos diseñados para potenciar la plasticidad cerebral de tu hijo.",
+          features: ["Español & English Nativo", "Desarrollo del Lenguaje Temprano", "Actividades Sensoriales"]
         },
         {
           id: "02",
-          title: "Coach de Aprendizaje & Rutinas EYLF",
-          desc: "Planes diarios estructurados bajo el marco educativo australiano (EYLF) con estimulación bilingüe temprana, control estricto de alergias y nutrición balanceada.",
-          features: ["Bilingüismo Temprano", "Adaptación Climática Brisbane", "Alertas de Dieta & Alergias"]
+          title: "Currículo EYLF & Rutinas Diarias",
+          desc: "Planificación pedagógica alineada con los estándares educativos de Australia para fomentar la autonomía, la motricidad fina/gruesa y la autoconfianza.",
+          features: ["Alineado con Jardines AU", "Rutina de Alimentación Sana", "Fomento de Autonomía"]
         },
         {
           id: "03",
-          title: "Guardián de Seguridad & Emergencias 24/7",
-          desc: "Geolocalización GPS en salidas a parques de Brisbane, check-ins automatizados y despacho inmediato de enfermería pediátrica First Aid en caso de anomalías.",
-          features: ["Geofencing en Parques", "Check-in Cada 30 Mins", "Respuesta Médica Pediátrica"]
+          title: "Seguridad Pediátrica & Salidas al Sol",
+          desc: "Supervisión 1:1 estricta durante paseos en los mejores parques de Brisbane (New Farm Park, South Bank, Roma Street), manteniendo protección solar constante.",
+          features: ["Protección UV & Hidratación", "Atención Médica de Emergencia", "Comunicación Continua con Padres"]
         },
         {
           id: "04",
-          title: "Mentor de Comportamiento & Hábitos",
-          desc: "Estrategias de psicología infantil aprobadas para reducir el tiempo de pantalla, gamificar la rutina de acostarse y fomentar la autorregulación emocional.",
-          features: ["Cero Pantallas Negativas", "Tracker de Sueño Gamificado", "Desarrollo Socioemocional"]
+          title: "Hábito del Sueño & Cero Pantallas",
+          desc: "Enfoque 100% libre de dispositivos electrónicos negativos. Creación de ambientes de descanso pacíficos para un sueño reparador y balance emocional.",
+          features: ["Desconexión Digital Total", "Ambiente de Descanso Guiado", "Inteligencia Emocional Infant"]
         }
-      ]
-    },
-    howItWorks: {
-      tag: "PROCESO SIMPLE Y TRANSPARENTE",
-      title: "Cómo NannyPro AI transforma el cuidado infantil en 4 pasos",
-      steps: [
-        {
-          step: "PASO 01",
-          title: "Evaluación de Necesidades de tu Familia",
-          desc: "Define tus horarios en Brisbane, suburbio, edades de tus hijos y preferencia de idioma (Español, Inglés o Bilingüe)."
-        },
-        {
-          step: "PASO 02",
-          title: "Matching por IA & Verificación Blue Card",
-          desc: "Nuestra IA analiza más de 40 variables de compatibilidad y verifica automáticamente el estado legal de la QLD Blue Card."
-        },
-        {
-          step: "PASO 03",
-          title: "Orquestación en Tiempo Real & Reporte Diario",
-          desc: "Recibe actualizaciones de fotos en tiempo real, registro de comidas, siestas y actividades educativas desde la app."
-        },
-        {
-          step: "PASO 04",
-          title: "Soporte IA 24/7 & Concierge Continuo",
-          desc: "Ajuste dinámico de rutinas según el descanso o estado de ánimo del niño, con respaldo de nuestro equipo local en Brisbane."
-        }
-      ]
-    },
-    orchestration: {
-      tag: "TECNOLOGÍA REVOLUCIONARIA",
-      title: "Orquestación Familiar Inteligente por IA",
-      subtitle: "Mira cómo NannyPro AI reacciona en tiempo real ante imprevistos para coordinar a la niñera y optimizar el día de tu hijo.",
-      scenarios: [
-        {
-          id: "teething",
-          label: "😴 Bebé durmió poco (Dentición)",
-          condition: "El niño durmió solo 5.5h por molestia de dentición durante la noche.",
-          aiAction: "IA detecta cansancio -> Cancela juegos de alta intensidad y los reemplaza por estimulación sensorial acuática suave. Alerta a la niñera Valentina sobre aplicación de mordedor frío y ajusta el menú a puré frío de frutas.",
-          status: "Rutina Matutina Actualizada Auto-magicamente"
-        },
-        {
-          id: "rainy",
-          label: "🌧️ Lluvia repentina en Brisbane",
-          condition: "Pronóstico de tormenta en el suburbio de New Farm a las 2:00 PM.",
-          aiAction: "IA notifica a la niñera 45 minutos antes -> Sugiere trasladar la lectura EYLF al interior, activa kit de pintura creativa y envía receta de merienda tibia nutritiva.",
-          status: "Plan de Emergencia por Clima Activado"
-        },
-        {
-          id: "energy",
-          label: "⚡ Nivel de Energía Alto",
-          condition: "Niño muestra alta inquietud y energía acumulada post-almuerzo.",
-          aiAction: "IA recomienda circuito motor en parque de Brisbane con supervisión GPS -> Envía lista de juegos interactivos en español/inglés para quemar energía de forma segura.",
-          status: "Optimización de Enfoque y Movilidad"
-        }
-      ]
-    },
-    fundamentals: {
-      tag: "DESARROLLO INTEGRAL",
-      title: "12 Fundamentales Diarios monitoreados por IA",
-      subtitle: "Cada jornada incluye el equilibrio perfecto entre salud física, estimulación cognitiva y cuidado emocional.",
-      items: [
-        { icon: "☀️", name: "Juego al Sol al Aire Libre", detail: "Parques de Brisbane con protección UV y crema solar", status: "Completado (45 min)" },
-        { icon: "📵", name: "Horas Libre de Pantallas", detail: "Enfoque en interacción humana directa y creatividad", status: "100% Cumplido" },
-        { icon: "💧", name: "Rastreo de Hidratación", detail: "Metas de agua según la temperatura en Queensland", status: "1.2L de 1.5L" },
-        { icon: "🎨", name: "Desarrollo Sensorial", detail: "Texturas, pintura con dedos y exploración táctil", status: "Activo" },
-        { icon: "📚", name: "Lectura EYLF Bilingüe", detail: "Cuentos en español e inglés alineados con el marco AU", status: "2 Libros Leídos" },
-        { icon: "🥗", name: "Nutrición Balanceada", detail: "Menús libres de alérgenos y proteínas saludables", status: "3/3 Comidas" },
-        { icon: "🌙", name: "Rutina de Sueño Gamificada", detail: "Ruido blanco, temperatura ideal y horarios consistentes", status: "En progreso" },
-        { icon: "❤️", name: "Chequeo Emocional", detail: "Validación de sentimientos y autorregulación guiada", status: "Estado: Feliz 😊" },
-        { icon: "🏃", name: "Movilidad & Motor Grueso", detail: "Juegos de agilidad, equilibrio y saltos en parque", status: "Completado" },
-        { icon: "✂️", name: "Manualidades Creativas", detail: "Desarrollo de motricidad fina y expresión artística", status: "Completado" },
-        { icon: "🧸", name: "Interacción Social", detail: "Compartir con otros niños y aprendizaje de valores", status: "Excelente" },
-        { icon: "🧼", name: "Rutina de Higiene Pediátrica", detail: "Lavado de manos frecuente y cuidado personal", status: "Verificado" }
-      ]
-    },
-    difference: {
-      tag: "POR QUÉ ELEGARNANNYPRO AI",
-      title: "La diferencia entre una Agencia Tradicional y NannyPro AI",
-      headers: ["Característica / Métrica", "Agencias Tradicionales en Brisbane", "NannyPro AI (Tech + IA)"],
-      rows: [
-        { feature: "Velocidad de Emparejamiento", traditional: "2 a 4 semanas de espera", nannypro: "Instantáneo (Menos de 24 hrs)" },
-        { feature: "Verificación de Seguridad", traditional: "Revisión manual lenta de documentos", nannypro: "Validación en vivo con QLD Blue Card & Policía" },
-        { feature: "Opción de Niñeras Bilingües", traditional: "Limitada y con costo extra elevado", nannypro: "Red nativa bilingüe (Español & English)" },
-        { feature: "Seguimiento Durante el Día", traditional: "Sin visibilidad (solo mensajes de WhatsApp)", nannypro: "Feed interactivo en vivo con fotos y GPS" },
-        { feature: "Respuesta ante Emergencias", traditional: "Llamadas a contestador en horas no laborales", nannypro: "Despacho médico 24/7 & Concierge instantáneo" },
-        { feature: "Marco Educativo Incorporado", traditional: "Cuidado pasivo sin plan de estudio", nannypro: "Planes EYLF adaptados y monitoreados por IA" }
       ]
     },
     testimonials: {
-      tag: "HISTORIAS DE ÉXITO EN BRISBANE",
-      title: "Tranquilidad comprobada para familias en Queensland",
-      subtitle: "Descubre cómo padres latinos y australianos en Brisbane han transformado su rutina familiar con NannyPro AI.",
+      tag: "OPINIONES DE FAMILIAS EN BRISBANE",
+      title: "Lo que dicen los padres que confían en nosotros",
+      subtitle: "Historias reales de familias latinas y australianas en los suburbios de Brisbane.",
       reviews: [
         {
           name: "Camila & Mateo S.",
           location: "New Farm, Brisbane",
           flag: "🇨🇴 🇦🇺",
           avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
-          quote: "Mudarnos a Brisbane desde Colombia con nuestro hijo de 2 años fue un reto. Encontrar una niñera bilingüe con su Blue Card al día nos dio una tranquilidad incalculable. NannyPro AI fue nuestro salvavidas.",
+          quote: "Contar con una educadora que no solo tiene su Blue Card impecable sino que además habla español con nuestro hijo de 2 años ha sido la mejor decisión que tomamos al llegar a Brisbane.",
           rating: 5,
-          badge: "Familia Verificada • Suburbio New Farm"
+          badge: "Familia Verificada • New Farm"
         },
         {
           name: "Liam & Sarah Jenkins",
           location: "Paddington, Brisbane",
           flag: "🇦🇺",
           avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
-          quote: "We wanted our daughter to learn Spanish early on. NannyPro AI matched us with a top-tier bilingual nanny who follows the EYLF curriculum flawlessly. The live activity feed is incredible!",
+          quote: "We wanted our daughter to learn Spanish in a fun, natural environment. The care quality, daily reporting, and EYLF structure are top-notch!",
           rating: 5,
           badge: "Verified Family • Paddington QLD"
         },
@@ -187,298 +143,180 @@ export const content = {
           location: "South Brisbane",
           flag: "🇲🇽 🇦🇺",
           avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80",
-          quote: "Como médica en el hospital de Brisbane, mis horarios son impredecibles. El servicio de emergencia de NannyPro AI y la calidad de las niñeras con Blue Card ha sido la mejor inversión de mi vida.",
+          quote: "Como médica con horarios exigentes en Brisbane, la puntualidad, profesionalismo y la calidez con mi hijo me dan una tranquilidad incalculable.",
           rating: 5,
           badge: "Familia Verificada • South Brisbane"
         }
       ]
     },
-    pricing: {
-      tag: "MEMBRESÍAS EN DÓLARES AUSTRALIANOS ($ AUD)",
-      title: "Invierte en la seguridad y desarrollo de tus hijos",
-      subtitle: "Sin tarifas ocultas de agencias tradicionales. Cancela en cualquier momento con 1 clic.",
-      monthly: "Facturación Mensual",
-      annual: "Facturación Anual",
-      discountBadge: "Ahorra 20%",
-      plans: [
-        {
-          name: "Starter Care",
-          priceMonthly: 29,
-          priceAnnual: 23,
-          desc: "Ideal para familias que necesitan directorio verificado y búsquedas ocasionales.",
-          features: [
-            "Acceso al Directorio de Niñeras en Brisbane",
-            "Verificación básica de QLD Blue Card",
-            "Filtro de Niñeras Bilingües (Español/Inglés)",
-            "Soporte por correo electrónico"
-          ],
-          cta: "Comenzar con Starter",
-          popular: false
-        },
-        {
-          name: "Smart Family AI",
-          priceMonthly: 69,
-          priceAnnual: 55,
-          desc: "El plan favorito de las familias en Brisbane. IA completa, feed en vivo y planes EYLF.",
-          features: [
-            "Emparejamiento Ilimitado por IA en 24h",
-            "Verificación 100% QLD Blue Card + Policía",
-            "Feed Interactivo en Tiempo Real con Fotos",
-            "Planes Educativos EYLF Bilingües",
-            "Rastreo GPS de Salidas a Parques",
-            "Prueba Gratuita de 7 Días Incluida"
-          ],
-          cta: "EMPEZAR PRUEBA GRATIS 7 DÍAS",
-          popular: true
-        },
-        {
-          name: "Elite Family Concierge",
-          priceMonthly: 129,
-          priceAnnual: 103,
-          desc: "Atención VIP 1:1, niñeras para viajes y acceso a psicólogos infantiles.",
-          features: [
-            "Todo lo del plan Smart Family AI",
-            "Family Manager Dedicado 1:1 en Brisbane",
-            "Prioridad en Niñeras de Viaje & Noches",
-            "Acceso a Consultas de Psicología Infantil",
-            "Garantía de Reemplazo de Emergencia en < 2 hrs"
-          ],
-          cta: "Solicitar Acceso Elite",
-          popular: false
-        }
-      ]
-    },
     faq: {
-      tag: "DUDAS FRECUENTES",
-      title: "Todo lo que necesitas saber antes de empezar en Brisbane",
+      tag: "RESOLVEMOS TUS DUDAS",
+      title: "Preguntas Frecuentes de los Padres en Brisbane",
       items: [
         {
-          q: "¿Qué es la verificación QLD Blue Card y cómo la garantizan?",
-          a: "La Blue Card es el certificado oficial del Gobierno de Queensland obligatorio para cualquier persona que trabaje con niños. NannyPro AI conecta directamente con la base de datos oficial para validar que la tarjeta de la niñera esté activa, vigentes y sin historial de antecedentes antes de cualquier contratación."
+          q: "¿Cómo verifico la QLD Blue Card antes de comenzar?",
+          a: "Te compartimos directamente el número de Blue Card oficial del Gobierno de Queensland para que puedas validar en línea su vigencia en el portal de Blue Card Services QLD."
         },
         {
-          q: "¿Puedo solicitar específicamente niñeras de habla hispana en Brisbane?",
-          a: "¡Absolutamente! Contamos con una red destacada de niñeras bilingües (español/inglés) altamente cualificadas en Brisbane. Puedes filtrar por preferencia de idioma en tu perfil para que tu hijo practique español o inglés según tus objetivos familiares."
+          q: "¿En qué suburbios de Brisbane prestan el servicio privado?",
+          a: "Atendemos en los principales suburbios de Brisbane como New Farm, Teneriffe, Paddington, Milton, West End, South Brisbane, Ascot, Hamilton, Indooroopilly, Toowong y zonas aledañas."
         },
         {
-          q: "¿En qué suburbios de Brisbane está disponible el servicio?",
-          a: "Estamos disponibles en toda la zona metropolitana de Brisbane, incluyendo New Farm, Teneriffe, Fortitude Valley, Paddington, West End, South Brisbane, Ascot, Hamilton, Indooroopilly, Carindale, Chermside y zonas aledañas."
+          q: "¿Podemos agendar una entrevista previa sin costo?",
+          a: "¡Sí! Siempre recomendamos realizar una breve entrevista de 15 minutos por videollamada o presencial para conocernos y revisar las necesidades específicas de tus hijos."
         },
         {
-          q: "¿Cómo funciona la prueba gratuita de 7 días?",
-          a: "Puedes registrarte en el plan Smart Family AI y probar la plataforma sin costo durante 7 días. Puedes realizar búsquedas, revisar perfiles verificados de niñeras en Brisbane y probar las funciones de IA. Si no estás satisfecho, cancelas con un solo clic sin penalización."
-        },
-        {
-          q: "¿Qué sucede en caso de una emergencia o cancelación de última hora?",
-          a: "Con nuestro algoritmo de reemplazo inmediato y concierge 24/7, el sistema busca automáticamente niñeras verificadas disponibles de respaldo en tu mismo suburbio de Brisbane para cubrir el turno de inmediato."
+          q: "¿Cómo se coordinan las tarifas y formas de pago?",
+          a: "Manejamos tarifas transparentes por hora o paquetes semanales en Dólares Australianos ($ AUD) con facturación semanal flexible."
         }
       ]
     },
     footer: {
-      brandDesc: "La plataforma de tecnología de cuidado infantil impulsada por IA y niñeras bilingües verificadas con QLD Blue Card en Brisbane, Australia.",
+      brandDesc: "El servicio boutique privado de cuidado infantil bilingüe y educación temprana EYLF con acreditación QLD Blue Card en Brisbane, Australia.",
       location: "Brisbane City, Queensland 4000, Australia 🇦🇺",
-      compliance: "Cumplimiento estricto con la Ley de Privacidad de Australia (AU Privacy Act 1988) y normativa QLD Blue Card Services.",
+      compliance: "Cumplimiento de la Ley de Privacidad de Australia (AU Privacy Act 1988) y QLD Blue Card Services.",
       col1: "Servicios",
-      col2: "Comunidad",
-      col3: "Legal",
-      copyright: "© 2026 NannyPro AI Australia Pty Ltd. Todos los derechos reservados."
-    },
-    modalMatch: {
-      title: "Encuentra tu Niñera Ideal en Brisbane",
-      subtitle: "Responde 3 preguntas sencillas y nuestra IA te mostrará perfiles bilingües compatibles verificados con Blue Card.",
-      step1Title: "1. ¿En qué suburbio de Brisbane vives?",
-      step2Title: "2. ¿Qué idioma prefieres para la niñera?",
-      step3Title: "3. ¿Cuántos niños necesitan cuidado?",
-      langOptions: ["Bilingüe (Español e Inglés)", "Principalmente Español", "English Native"],
-      suburbOptions: ["New Farm / Teneriffe", "Paddington / Milton", "West End / South Brisbane", "Ascot / Hamilton", "Indooroopilly / Toowong", "Otro Suburbio de Brisbane"],
-      childrenOptions: ["1 Niño/a", "2 Niños", "3+ Niños"],
-      btnNext: "Siguiente Paso",
-      btnSubmit: "VER MIS MATCHES DE NIÑERAS EN BRISBANE 🚀",
-      matchResultTitle: "¡Hemos encontrado 8 Niñeras Bilingües Verificadas en tu zona!",
-      matchResultDesc: "Valentina M. (New Farm), Sofía G. (West End) y Lucía P. (Paddington) tienen disponibilidad inmediata con QLD Blue Card activa.",
-      closeBtn: "Cerrar"
+      col2: "Acreditación",
+      col3: "Contacto Directo",
+      copyright: "© 2026 NannyPro AI Brisbane. Todos los derechos reservados."
     }
   },
   en: {
     navbar: {
-      badge: "Brisbane, QLD 🇦🇺",
-      aiTag: "AI",
+      badge: "Available in Brisbane, QLD 🇦🇺",
+      aiTag: "PRO 2.0",
       links: {
-        services: "Services",
-        howItWorks: "How It Works",
+        services: "Private Service",
+        credentials: "QLD Credentials",
+        calculator: "AUD Calculator",
         orchestration: "AI Orchestration",
-        fundamentals: "Fundamentals",
-        difference: "The Difference",
-        pricing: "Pricing",
+        testimonials: "Success Stories",
         faq: "FAQ"
       },
-      login: "Log In",
-      trialCta: "Start 7-Day Free Trial",
-      matchCta: "Find a Nanny Now"
+      login: "Parent Portal",
+      trialCta: "Book Free Meeting",
+      matchCta: "Book Private Care"
     },
     hero: {
-      badge: "Smart Childcare Orchestrated by AI in Brisbane 🇦🇺",
-      badgeLatino: "#1 Network of Verified Bilingual Nannies in Brisbane",
-      titleStart: "Your family isn't average.",
-      titleAccent: "Your Nanny Tech",
-      titleEnd: "shouldn't be either.",
-      subtitle: "Eliminate childcare stress. NannyPro AI combines QLD Blue Card vetting, real-time activity tracking, EYLF learning plans, and bilingual stimulation (Spanish/English) in one digital brain.",
-      findNannyBtn: "FIND A NANNY IN BRISBANE",
-      viewPlansBtn: "View Membership Plans",
-      socialProof: "Over 450+ Active Families in New Farm, Paddington, West End, Ascot, South Brisbane & Indooroopilly",
-      rating: "4.9/5 Parent Rating",
+      badge: "Private Bilingual Childcare Service in Brisbane 🇦🇺",
+      badgeLatino: "Exclusive 1:1 Care by Certified Founder Educator",
+      titleStart: "The private care your child deserves.",
+      titleAccent: "Absolute peace of mind",
+      titleEnd: "your family needs in Brisbane.",
+      subtitle: "A boutique high-end service combining bilingual warmth (Spanish/English), top Queensland government accreditation (QLD Blue Card & Pediatric First Aid), and the Australian EYLF curriculum.",
+      findNannyBtn: "BOOK BRISBANE CONSULTATION",
+      viewPlansBtn: "Calculate AUD Rates",
+      socialProof: "Dedicated VIP Care in New Farm, Paddington, West End, Ascot, South Brisbane & Indooroopilly",
+      rating: "5.0/5 ★ Founding Family Rating",
       mockup: {
-        liveBadge: "LIVE • BRISBANE NORTH",
-        verifiedCard: "QLD Blue Card Verified",
-        wwccNumber: "WWCC QLD #849201 • Active",
-        nannyName: "Valentina M.",
-        nannyRole: "Elite Bilingual Nanny (Spanish & English)",
-        nannySuburbs: "Brisbane Inner City • 5+ yrs exp.",
-        readinessScore: "98/100",
+        liveBadge: "VIP BOUTIQUE CARE • BRISBANE",
+        verifiedCard: "QLD Blue Card & CPR Certified",
+        wwccNumber: "Blue Card QLD #849201 • Active",
+        nannyName: "Bilingual Founder Educator",
+        nannyRole: "EYLF Early Childhood Specialist",
+        nannySuburbs: "Brisbane Metropolitan • 1:1 Care",
+        readinessScore: "100/100",
         readinessLabel: "Pediatric Health & Safety Score",
-        activityTitle: "Real-Time Activity Feed",
-        activity1: "11:30 AM • New Farm Park: EYLF reading & sensory play in sun (35 mins).",
-        activity2: "12:15 PM • High-protein allergen-free lunch completed 🥗",
-        activity3: "01:00 PM • Naptime routine started (White noise + temp monitoring)."
+        activityTitle: "Daily Report & Learning Progress",
+        activity1: "10:30 AM • New Farm Park: EYLF reading & sensory play in clean sun.",
+        activity2: "12:30 PM • High-protein allergen-free lunch completed 🥗",
+        activity3: "01:30 PM • Naptime routine & dual language lullabies."
       }
     },
+    credentials: {
+      tag: "100% TRANSPARENCY & COMPLIANCE",
+      title: "Queensland Official Accreditation Showcase",
+      subtitle: "For your total peace of mind, all qualifications are active and verifiable with the Queensland Government.",
+      cards: [
+        {
+          title: "QLD Blue Card Services",
+          number: "Blue Card #849201",
+          desc: "Official Queensland Government clearance required for working with children with zero criminal history.",
+          status: "Verified & Active 🟢"
+        },
+        {
+          title: "Pediatric First Aid & CPR",
+          number: "HLTAID012 Certified",
+          desc: "Australian medical accreditation in pediatric emergency care, CPR, and allergy management.",
+          status: "Current Australia 🟢"
+        },
+        {
+          title: "EYLF Learning Framework",
+          number: "Early Years Learning Framework",
+          desc: "Direct alignment with official Australian early childhood cognitive & socio-emotional development.",
+          status: "Implemented 🟢"
+        },
+        {
+          title: "National Police Check",
+          number: "National Police Check AU",
+          desc: "Rigorously vetted criminal background check cleared across all Australian states.",
+          status: "Approved 🟢"
+        }
+      ]
+    },
+    calculator: {
+      tag: "TRANSPARENT PRICING SYSTEM",
+      title: "Interactive AUD Rate Calculator",
+      subtitle: "Tailor the perfect bilingual care schedule for your family in Brisbane and get an instant estimate.",
+      suburbLabel: "Select Your Brisbane Suburb:",
+      daysLabel: "Required Days Per Week:",
+      hoursLabel: "Care Hours Per Day:",
+      suburbOptions: ["New Farm / Teneriffe", "Paddington / Milton", "West End / South Brisbane", "Ascot / Hamilton", "Indooroopilly / Toowong", "Other Brisbane Suburb"],
+      estimatedTitle: "Estimated Weekly Investment",
+      estimatedNote: "Includes 1:1 dedicated care, EYLF plans, daily updates, and full safety assurance.",
+      ctaBtn: "💬 BOOK THIS SCHEDULE VIA WHATSAPP (+61 425 342 469)"
+    },
     services: {
-      tag: "ELITE CARE SERVICES",
-      title: "Designed for Total Peace of Mind for Brisbane Families",
-      subtitle: "We combine the warmth and culture of qualified bilingual nannies with strict Queensland government vetting and Artificial Intelligence.",
+      tag: "PRIVATE BOUTIQUE SERVICES",
+      title: "Designed for Excellence in Child Development",
+      subtitle: "A holistic proposal uniting early dual-language immersion with Queensland's highest safety standards.",
       cards: [
         {
           id: "01",
-          title: "Intelligent Bilingual Matching",
-          desc: "100% QLD Blue Card verified nannies with police background checks & psychological screening. We accept only the top 1% of bilingual applicants.",
-          features: ["Brisbane Suburb Match", "Cultural & Values Alignment", "Instant Blue Card Check"]
+          title: "Early Bilingual Immersion",
+          desc: "Natural exposure to Spanish and English through songs, traditional storytelling, and cognitive games designed to enhance brain plasticity.",
+          features: ["Native Spanish & English", "Early Speech Development", "Sensory Games"]
         },
         {
           id: "02",
-          title: "EYLF Learning & Routine Coach",
-          desc: "Structured daily plans following the Australian Early Years Learning Framework with early bilingual immersion, strict allergy control, and balanced meals.",
-          features: ["Early Dual Language", "Brisbane Weather Adaptation", "Diet & Allergy Alerts"]
+          title: "EYLF Curriculum & Daily Routines",
+          desc: "Structured pedagogical planning aligned with Australian early learning standards to foster autonomy and motor skills.",
+          features: ["Aligned with AU Kindy", "Healthy Meal Schedules", "Autonomy Building"]
         },
         {
           id: "03",
-          title: "24/7 Safety Guard & Emergency Concierge",
-          desc: "Real-time GPS tracking on park visits, automated check-ins, and instant pediatric First Aid nurse dispatch for any anomalies.",
-          features: ["Park Geofencing", "30-Min Auto Check-ins", "Pediatric Medical Response"]
+          title: "Pediatric Safety & Sun Play",
+          desc: "Strict 1:1 supervision during park outings in Brisbane (New Farm Park, South Bank, Roma Street) with sun protection.",
+          features: ["UV Protection & Hydration", "Emergency Medical Care", "Parent Updates"]
         },
         {
           id: "04",
-          title: "Behavioral & Habit Mentor",
-          desc: "Child-psychology approved strategies to reduce screen time, gamify bedtime routines, and foster emotional self-regulation.",
-          features: ["Zero Negative Screen Time", "Gamified Sleep Tracker", "Socio-Emotional Growth"]
+          title: "Sleep Habits & Zero Screen Time",
+          desc: "100% negative screen-free environment focusing on peaceful rest routines and emotional balance.",
+          features: ["Zero Negative Screen Time", "Guided Rest Routines", "Socio-Emotional Growth"]
         }
-      ]
-    },
-    howItWorks: {
-      tag: "SIMPLE & TRANSPARENT PROCESS",
-      title: "How NannyPro AI transforms childcare in 4 steps",
-      steps: [
-        {
-          step: "STEP 01",
-          title: "Family Profile & Needs Assessment",
-          desc: "Define your schedules in Brisbane, suburb, children's ages, and language preference (Spanish, English, or Bilingual)."
-        },
-        {
-          step: "STEP 02",
-          title: "AI Smart Match & Blue Card Check",
-          desc: "Our AI evaluates 40+ compatibility data points and automatically verifies active QLD Blue Card status."
-        },
-        {
-          step: "STEP 03",
-          title: "Real-Time Day Orchestration & Updates",
-          desc: "Receive live photo updates, meal logs, nap trackers, and educational progress right from your phone."
-        },
-        {
-          step: "STEP 04",
-          title: "24/7 AI Support & Continuous Concierge",
-          desc: "Dynamic routine adjustment based on your child's sleep or mood, backed by our local Brisbane team."
-        }
-      ]
-    },
-    orchestration: {
-      tag: "REVOLUTIONARY TECHNOLOGY",
-      title: "AI Family Orchestration Widget",
-      subtitle: "Watch how NannyPro AI reacts in real time to unexpected events to coordinate your nanny and optimize your child's day.",
-      scenarios: [
-        {
-          id: "teething",
-          label: "😴 Low Sleep (Teething)",
-          condition: "Child slept only 5.5 hours due to overnight teething discomfort.",
-          aiAction: "AI detects tiredness -> Cancels high-intensity games and replaces them with low-intensity aquatic sensory play. Alerts nanny Valentina to apply cool teether and adjusts lunch to chilled fruit puree.",
-          status: "Morning Routine Auto-Adjusted"
-        },
-        {
-          id: "rainy",
-          label: "🌧️ Sudden Rain in Brisbane",
-          condition: "Storm forecast in New Farm suburb at 2:00 PM.",
-          aiAction: "AI alerts nanny 45 mins prior -> Recommends moving EYLF reading indoors, triggers creative painting kit, and sends warm nutritious snack recipe.",
-          status: "Weather Contingency Plan Active"
-        },
-        {
-          id: "energy",
-          label: "⚡ High Energy Spike",
-          condition: "Child displays high energy and restlessness post-lunch.",
-          aiAction: "AI suggests motor skills park course in Brisbane with GPS monitoring -> Sends interactive bilingual games list to burn energy safely.",
-          status: "Focus & Mobility Optimization"
-        }
-      ]
-    },
-    fundamentals: {
-      tag: "HOLISTIC DEVELOPMENT",
-      title: "12 Daily Fundamentals Tracked by AI",
-      subtitle: "Every single day balances physical health, cognitive stimulation, and emotional care.",
-      items: [
-        { icon: "☀️", name: "Outdoor Sun Play", detail: "Brisbane parks with UV protection & sunscreen monitoring", status: "Completed (45 mins)" },
-        { icon: "📵", name: "Screen-Free Hours", detail: "Focus on direct human connection & active creativity", status: "100% Achieved" },
-        { icon: "💧", name: "Hydration Tracking", detail: "Water intake goals tailored for Queensland heat", status: "1.2L of 1.5L" },
-        { icon: "🎨", name: "Sensory Development", detail: "Textures, finger painting, and tactile exploration", status: "Active" },
-        { icon: "📚", name: "Bilingual EYLF Reading", detail: "Storybooks in Spanish & English aligned with AU framework", status: "2 Books Read" },
-        { icon: "🥗", name: "Balanced Nutrition", detail: "Allergen-free menus & healthy protein meals", status: "3/3 Meals" },
-        { icon: "🌙", name: "Gamified Sleep Routine", detail: "White noise, optimal temperature & consistent schedules", status: "In Progress" },
-        { icon: "❤️", name: "Emotional Check-in", detail: "Validation of feelings & guided self-regulation", status: "Mood: Happy 😊" },
-        { icon: "🏃", name: "Physical Mobility", detail: "Agility games, balance, and outdoor park jumping", status: "Completed" },
-        { icon: "✂️", name: "Creative Crafting", detail: "Fine motor skills and artistic self-expression", status: "Completed" },
-        { icon: "🧸", name: "Social Interaction", detail: "Sharing with peers and learning core values", status: "Excellent" },
-        { icon: "🧼", name: "Hygiene Routine", detail: "Frequent handwashing & pediatric cleanliness", status: "Verified" }
-      ]
-    },
-    difference: {
-      tag: "WHY CHOOSE NANNYPRO AI",
-      title: "Traditional Agencies vs NannyPro AI",
-      headers: ["Feature / Metric", "Traditional Brisbane Agencies", "NannyPro AI (Tech + AI)"],
-      rows: [
-        { feature: "Matching Speed", traditional: "2 to 4 weeks wait time", nannypro: "Instant (Under 24 hours)" },
-        { feature: "Safety Vetting", traditional: "Slow manual background checks", nannypro: "Live QLD Blue Card & Police API Validation" },
-        { feature: "Bilingual Nanny Option", traditional: "Limited & heavy surcharge", nannypro: "Native Bilingual Network (Spanish & English)" },
-        { feature: "Daily Live Feed", traditional: "No visibility (casual WhatsApp messages)", nannypro: "Interactive Live Feed with Photos & GPS" },
-        { feature: "Emergency Response", traditional: "Voicemail after hours", nannypro: "24/7 Medical Nurse Dispatch & Backup Nanny" },
-        { feature: "Built-in Learning Framework", traditional: "Passive care without curriculum", nannypro: "AI-monitored EYLF Curriculum Plans" }
       ]
     },
     testimonials: {
-      tag: "BRISBANE SUCCESS STORIES",
-      title: "Proven Peace of Mind for Families in Queensland",
-      subtitle: "See how Latino and Australian parents in Brisbane have transformed their family routines with NannyPro AI.",
+      tag: "BRISBANE PARENT REVIEWS",
+      title: "What Families Say About Our Care",
+      subtitle: "Real stories from Latino and Australian families across Brisbane suburbs.",
       reviews: [
         {
           name: "Camila & Mateo S.",
           location: "New Farm, Brisbane",
           flag: "🇨🇴 🇦🇺",
           avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
-          quote: "Moving to Brisbane with our 2-year-old was a big transition. Finding a qualified bilingual nanny with an active Blue Card gave us immense peace of mind. NannyPro AI was a lifesaver.",
+          quote: "Having an educator with an active Blue Card who speaks Spanish with our 2-year-old was the best decision we made in Brisbane.",
           rating: 5,
-          badge: "Verified Family • New Farm Suburb"
+          badge: "Verified Family • New Farm"
         },
         {
           name: "Liam & Sarah Jenkins",
           location: "Paddington, Brisbane",
           flag: "🇦🇺",
           avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
-          quote: "We wanted our daughter to learn Spanish early on. NannyPro AI matched us with a top-tier bilingual nanny who follows the EYLF curriculum flawlessly. The live activity feed is incredible!",
+          quote: "We wanted our daughter to learn Spanish in a fun, natural environment. The care quality, daily reporting, and EYLF structure are top-notch!",
           rating: 5,
           badge: "Verified Family • Paddington QLD"
         },
@@ -487,116 +325,42 @@ export const content = {
           location: "South Brisbane",
           flag: "🇲🇽 🇦🇺",
           avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80",
-          quote: "As a hospital doctor in Brisbane, my shifts are demanding. NannyPro AI's emergency coverage and top-rated Blue Card nannies have been the best investment for our family.",
+          quote: "As a doctor in Brisbane, reliability and warm care for my son give me absolute peace of mind.",
           rating: 5,
           badge: "Verified Family • South Brisbane"
         }
       ]
     },
-    pricing: {
-      tag: "MEMBERSHIP PLANS IN AUD ($)",
-      title: "Invest in Your Children's Safety and Growth",
-      subtitle: "No hidden traditional agency markups. Cancel anytime with 1-click.",
-      monthly: "Monthly Billing",
-      annual: "Annual Billing",
-      discountBadge: "Save 20%",
-      plans: [
-        {
-          name: "Starter Care",
-          priceMonthly: 29,
-          priceAnnual: 23,
-          desc: "Ideal for families looking for verified directory searches in Brisbane.",
-          features: [
-            "Access to Brisbane Nanny Directory",
-            "Basic QLD Blue Card Verification",
-            "Bilingual Nanny Filter (Spanish/English)",
-            "Email Customer Support"
-          ],
-          cta: "Get Started with Starter",
-          popular: false
-        },
-        {
-          name: "Smart Family AI",
-          priceMonthly: 69,
-          priceAnnual: 55,
-          desc: "Most popular plan for Brisbane families. Full AI, Live Feed & EYLF plans.",
-          features: [
-            "Unlimited AI Matching in 24h",
-            "100% QLD Blue Card + Police Vetting",
-            "Real-Time Interactive Feed with Photos",
-            "Bilingual EYLF Educational Plans",
-            "Park Outing GPS Tracking",
-            "7-Day Free Trial Included"
-          ],
-          cta: "START 7-DAY FREE TRIAL",
-          popular: true
-        },
-        {
-          name: "Elite Family Concierge",
-          priceMonthly: 129,
-          priceAnnual: 103,
-          desc: "VIP 1:1 manager, travel nannies, and pediatric psychologist consultation.",
-          features: [
-            "Everything in Smart Family AI",
-            "1:1 Dedicated Family Manager in Brisbane",
-            "Priority Travel & Overnight Nannies",
-            "Child Psychology Consult Access",
-            "< 2hr Emergency Replacement Guarantee"
-          ],
-          cta: "Request Elite Access",
-          popular: false
-        }
-      ]
-    },
     faq: {
-      tag: "FREQUENTLY ASKED QUESTIONS",
-      title: "Everything you need to know before getting started in Brisbane",
+      tag: "CLEAR ANSWERS",
+      title: "Frequently Asked Questions in Brisbane",
       items: [
         {
-          q: "What is the QLD Blue Card and how do you verify it?",
-          a: "The Blue Card is Queensland's official government clearance required for anyone working with children. NannyPro AI interfaces directly with official verification systems to validate active status, expiration date, and police clearance before any match is made."
+          q: "How can I verify the QLD Blue Card credential?",
+          a: "We share our official Queensland Government Blue Card number so you can validate its active status online at any time."
         },
         {
-          q: "Can I specifically request Spanish-speaking or bilingual nannies in Brisbane?",
-          a: "Yes! We have a curated network of qualified bilingual (Spanish/English) nannies across Brisbane. You can set language preferences in your profile to encourage early dual-language learning."
+          q: "Which Brisbane suburbs do you service?",
+          a: "We service main inner Brisbane suburbs including New Farm, Teneriffe, Paddington, West End, South Brisbane, Ascot, Hamilton, Indooroopilly, and surrounding areas."
         },
         {
-          q: "Which Brisbane suburbs are covered?",
-          a: "We cover all major Brisbane metropolitan suburbs including New Farm, Teneriffe, Fortitude Valley, Paddington, West End, South Brisbane, Ascot, Hamilton, Indooroopilly, Carindale, Chermside, and surrounding areas."
+          q: "Can we schedule a free introductory meeting?",
+          a: "Yes! We encourage a free 15-minute video call or home visit to meet each other and discuss your child's needs."
         },
         {
-          q: "How does the 7-day free trial work?",
-          a: "You can sign up for the Smart Family AI plan completely risk-free for 7 days. Search nannies, inspect verified Blue Card credentials, and test the AI features. Cancel anytime with one click if it's not the perfect fit."
-        },
-        {
-          q: "What happens during a last-minute nanny emergency?",
-          a: "Our instant emergency concierge triggers automated standby notifications to nearby Blue Card verified nannies in your Brisbane suburb to dispatch coverage within hours."
+          q: "What are the rates and payment methods in AUD?",
+          a: "We offer transparent hourly rates and weekly packages in Australian Dollars ($ AUD) with simple weekly invoicing."
         }
       ]
     },
     footer: {
-      brandDesc: "The AI-driven childcare ecosystem with QLD Blue Card verified bilingual nannies in Brisbane, Australia.",
+      brandDesc: "Boutique private bilingual childcare and EYLF early education service with QLD Blue Card clearance in Brisbane, Australia.",
       location: "Brisbane City, Queensland 4000, Australia 🇦🇺",
-      compliance: "Strict compliance with AU Privacy Act 1988 & QLD Blue Card Services.",
+      compliance: "AU Privacy Act 1988 & QLD Blue Card Services compliant.",
       col1: "Services",
-      col2: "Community",
-      col3: "Legal",
-      copyright: "© 2026 NannyPro AI Australia Pty Ltd. All rights reserved."
-    },
-    modalMatch: {
-      title: "Find Your Ideal Nanny in Brisbane",
-      subtitle: "Answer 3 quick questions to unlock instant AI bilingual matches with verified Blue Cards.",
-      step1Title: "1. Which Brisbane suburb do you live in?",
-      step2Title: "2. What is your preferred nanny language?",
-      step3Title: "3. How many children need care?",
-      langOptions: ["Bilingual (Spanish & English)", "Mainly Spanish", "English Native"],
-      suburbOptions: ["New Farm / Teneriffe", "Paddington / Milton", "West End / South Brisbane", "Ascot / Hamilton", "Indooroopilly / Toowong", "Other Brisbane Suburb"],
-      childrenOptions: ["1 Child", "2 Children", "3+ Children"],
-      btnNext: "Next Step",
-      btnSubmit: "VIEW MY BRISBANE NANNY MATCHES 🚀",
-      matchResultTitle: "We found 8 Verified Bilingual Nannies in your area!",
-      matchResultDesc: "Valentina M. (New Farm), Sofía G. (West End) and Lucía P. (Paddington) have active QLD Blue Cards and immediate availability.",
-      closeBtn: "Close"
+      col2: "Credentials",
+      col3: "Direct Contact",
+      copyright: "© 2026 NannyPro AI Brisbane. All rights reserved."
     }
   }
 };
