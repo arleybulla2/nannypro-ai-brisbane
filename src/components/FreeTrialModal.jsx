@@ -1,17 +1,30 @@
 import React, { useState } from 'react';
-import { X, ShieldCheck, CheckCircle2, ArrowRight, Lock } from 'lucide-react';
+import { X, ShieldCheck, CheckCircle2, ArrowRight, Lock, Phone } from 'lucide-react';
 
 export default function FreeTrialModal({ isOpen, onClose, lang }) {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [suburb, setSuburb] = useState('');
+  const [phone, setPhone] = useState('');
   const [submitted, setSubmitted] = useState(false);
 
   if (!isOpen) return null;
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (name && email) {
+    if (name && (email || phone)) {
+      // Build pre-filled WhatsApp message with lead details
+      const textMessage = encodeURIComponent(
+        `Hola! Quisiera activar mi Prueba Gratuita de 7 Días en NannyPro AI Brisbane 🇦🇺.\n\n` +
+        `👤 Nombre: ${name}\n` +
+        `📧 Email: ${email}\n` +
+        `📍 Suburbio: ${suburb || 'Brisbane'}\n` +
+        `📱 Teléfono: ${phone || 'No especificado'}\n\n` +
+        `Quedo a la espera de coordinar la entrevista con la niñera fundadora.`
+      );
+
+      // Open WhatsApp chat directly to +61425342469
+      window.open(`https://wa.me/61425342469?text=${textMessage}`, '_blank');
       setSubmitted(true);
     }
   };
@@ -21,6 +34,7 @@ export default function FreeTrialModal({ isOpen, onClose, lang }) {
     setName('');
     setEmail('');
     setSuburb('');
+    setPhone('');
     onClose();
   };
 
@@ -53,13 +67,13 @@ export default function FreeTrialModal({ isOpen, onClose, lang }) {
             
             <p className="text-xs text-slate-400 leading-relaxed mb-6">
               {lang === 'es'
-                ? 'Accede a nuestro directorio de niñeras bilingües verificadas con QLD Blue Card en Brisbane. Sin cargos durante 7 días.'
-                : 'Access our verified QLD Blue Card bilingual nanny network in Brisbane. $0 charge for 7 days.'}
+                ? 'Accede a nuestro servicio de niñera bilingüe verificada con QLD Blue Card en Brisbane. Sin cargos durante 7 días.'
+                : 'Access our verified QLD Blue Card bilingual nanny service in Brisbane. $0 charge for 7 days.'}
             </p>
 
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form onSubmit={handleSubmit} className="space-y-3.5">
               <div>
-                <label className="block text-xs font-bold text-slate-300 mb-1">Nombre Completo</label>
+                <label className="block text-xs font-bold text-slate-300 mb-1">Nombre Completo *</label>
                 <input
                   type="text"
                   required
@@ -71,7 +85,7 @@ export default function FreeTrialModal({ isOpen, onClose, lang }) {
               </div>
 
               <div>
-                <label className="block text-xs font-bold text-slate-300 mb-1">Correo Electrónico</label>
+                <label className="block text-xs font-bold text-slate-300 mb-1">Correo Electrónico *</label>
                 <input
                   type="email"
                   required
@@ -82,38 +96,43 @@ export default function FreeTrialModal({ isOpen, onClose, lang }) {
                 />
               </div>
 
-              <div>
-                <label className="block text-xs font-bold text-slate-300 mb-1">Suburbio en Brisbane</label>
-                <input
-                  type="text"
-                  placeholder="Ej. New Farm, West End, Paddington"
-                  value={suburb}
-                  onChange={(e) => setSuburb(e.target.value)}
-                  className="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-sm text-white focus:outline-none focus:border-emerald-500"
-                />
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div>
+                  <label className="block text-xs font-bold text-slate-300 mb-1">Suburbio en Brisbane</label>
+                  <input
+                    type="text"
+                    placeholder="Ej. New Farm, West End"
+                    value={suburb}
+                    onChange={(e) => setSuburb(e.target.value)}
+                    className="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-sm text-white focus:outline-none focus:border-emerald-500"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-xs font-bold text-slate-300 mb-1">Teléfono / WhatsApp</label>
+                  <input
+                    type="tel"
+                    placeholder="Ej. +61 400 000 000"
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
+                    className="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-sm text-white focus:outline-none focus:border-emerald-500"
+                  />
+                </div>
               </div>
 
-              <div className="pt-2 flex flex-col gap-2.5">
+              <div className="pt-3">
                 <button
                   type="submit"
                   className="w-full py-4 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 text-slate-950 font-extrabold text-sm shadow-lg shadow-emerald-500/25 hover:scale-[1.02] transition-all flex items-center justify-center space-x-2"
                 >
-                  <span>{lang === 'es' ? 'ACTIVAR MI PRUEBA GRATIS DE 7 DÍAS 🚀' : 'ACTIVATE MY 7-DAY FREE TRIAL 🚀'}</span>
+                  <span>{lang === 'es' ? 'ACTIVAR MI PRUEBA GRATIS VÍA WHATSAPP 🚀' : 'ACTIVATE MY 7-DAY FREE TRIAL VIA WHATSAPP 🚀'}</span>
                 </button>
-                <a
-                  href="https://wa.me/61425342469?text=Hola!%20Prefiero%20chatear%20directamente%20por%20WhatsApp%20para%20cuidado%20infantil%20en%20Brisbane"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full py-3 rounded-xl bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 font-bold text-xs text-center transition-all flex items-center justify-center space-x-2"
-                >
-                  <span>💬 Chatear por WhatsApp directo (+61 425 342 469)</span>
-                </a>
               </div>
             </form>
 
             <div className="mt-4 flex items-center justify-center space-x-2 text-[11px] text-slate-500">
               <Lock className="w-3.5 h-3.5" />
-              <span>Garantía de privacidad • Cancela con 1 clic en cualquier momento</span>
+              <span>Garantía de privacidad • Atención directa en Brisbane</span>
             </div>
           </div>
         ) : (
@@ -123,18 +142,18 @@ export default function FreeTrialModal({ isOpen, onClose, lang }) {
             </div>
 
             <h3 className="text-xl font-extrabold text-white">
-              ¡Prueba Activada con Éxito!
+              ¡Solicitud Enviada por WhatsApp!
             </h3>
 
             <p className="text-xs text-slate-300 leading-relaxed">
-              Hemos enviado los accesos de tu cuenta y la lista de niñeras bilingües verificadas en tu suburbio de Brisbane a <span className="text-emerald-400 font-bold">{email}</span>.
+              Tus datos han sido estructurados y enviados al WhatsApp oficial <span className="text-emerald-400 font-bold">+61 425 342 469</span>. Te responderemos de inmediato.
             </p>
 
             <button
               onClick={handleClose}
               className="w-full py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-sm border border-white/10"
             >
-              Entendido / Ir al Dashboard
+              Entendido / Cerrar
             </button>
           </div>
         )}
